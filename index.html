@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fastion With Tailwind</title>
+    <style>
+        .Live:hover{
+            color: white;
+            background-color: rgb(63, 235, 149);
+            border-radius: 5px;
+            
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -22,10 +31,55 @@
         }
       </script>
       <link rel="stylesheet" href="style.css">
+      
 </head>
 <body>
-    
-    <header class="bg-penguin pb-32 pt-12 ">
+    <!-- //////////////////////////// -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success p-2 text-dark bg-opacity-25 text-white fixed-top mb-0">
+            <div class="container ">
+                <a class="navbar-brand" href="#">
+                    <img class="w-1/2" src="images/logo.png" alt="">
+                </a>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 pr-12">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home"><span class="Live font-bold">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carousel"><span class="Live font-bold">Carousel</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Woman"><span class="Live font-bold">Woman</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Man"><span class="Live font-bold">Man</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Cookies"><span class="Live font-bold">Cookies</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#shopping"><span class="Live font-bold">Shopping</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer"><span class="Live font-bold">About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Man">Man</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- //////////////////////////// -->
+    <header id="Home" class="bg-penguin pb-32 pt-12 ">
         <section class="container mx-auto sm:flex items-center justify-around">
             <div class="space-x-4 m-10">
                 <h1 class="text-2xl sm:text-5xl uppercase font-bold">
@@ -36,7 +90,8 @@
                 <p>Tech Amirul Islam I Am A Professional</p>
                 <p>Web Developer And Freelencer.</p>
                 <p>Mob: <span class="text-fuchsia-700">01302890996</span></p>
-                <button class="uppercase bg-[#a8c33d] py-4 px-7 rounded-xl  text-white font-samibold"><svg
+                <p>Email: <span class="text-purple-900">264785mdamirulislamrobi@gmail.com</span></p>
+                <button class="uppercase bg-[#a8c33d] py-2 px-6 rounded-xl  text-white font-samibold"><svg
                         xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -44,11 +99,32 @@
                     </svg>HIRE ME</button>
             </div>
             <div>
-                <img class="w-1/2 sm:w-full" src="images/Amirul.png" alt="">
+                <img class="w-1/2 sm:w-full mt-4" src="images/Amirul.png" alt="">
             </div>
         </section>
     </header>
-    <main class="container mx-auto">
+    <!-- ........................................ -->
+<div id="carousel" class="carousel w-full">
+    <div id="item1" class="carousel-item w-full">
+      <img src="https://placeimg.com/800/200/arch" class="w-full" />
+    </div> 
+    <div id="item2" class="carousel-item w-full">
+      <img src="https://placeimg.com/800/200/arch" class="w-full" />
+    </div> 
+    <div id="item3" class="carousel-item w-full">
+      <img src="https://placeimg.com/800/200/arch" class="w-full" />
+    </div> 
+    <div id="item4" class="carousel-item w-full">
+      <img src="https://placeimg.com/800/200/arch" class="w-full" />
+    </div>
+  </div> 
+  <div class="flex justify-center w-full py-2 gap-2">
+    <a href="#item1" class="btn btn-xs">1</a> 
+    <a href="#item2" class="btn btn-xs">2</a> 
+    <a href="#item3" class="btn btn-xs">3</a> 
+    <a href="#item4" class="btn btn-xs">4</a>
+  </div>
+    <main id="Woman" class="container mx-auto">
         <!-- woman jecket -->
         <section class="pb-24">
             <h2 class="text-5xl font-bold">woman jecket</h2>
@@ -115,7 +191,7 @@
 
 
     </main>
-    <main class="container mx-auto">
+    <main id="Man" class="container mx-auto">
 
         <section class="pb-24">
             <h2 class="text-5xl font-bold"> man jecket</h2>
@@ -179,29 +255,9 @@
             </div>
 
         </section>
+
 <!-- ........................................ -->
-<div class="carousel w-full">
-    <div id="item1" class="carousel-item w-full">
-      <img src="https://placeimg.com/800/200/arch" class="w-full" />
-    </div> 
-    <div id="item2" class="carousel-item w-full">
-      <img src="https://placeimg.com/800/200/arch" class="w-full" />
-    </div> 
-    <div id="item3" class="carousel-item w-full">
-      <img src="https://placeimg.com/800/200/arch" class="w-full" />
-    </div> 
-    <div id="item4" class="carousel-item w-full">
-      <img src="https://placeimg.com/800/200/arch" class="w-full" />
-    </div>
-  </div> 
-  <div class="flex justify-center w-full py-2 gap-2">
-    <a href="#item1" class="btn btn-xs">1</a> 
-    <a href="#item2" class="btn btn-xs">2</a> 
-    <a href="#item3" class="btn btn-xs">3</a> 
-    <a href="#item4" class="btn btn-xs">4</a>
-  </div>
-<!-- ........................................ -->
-<section class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 pl-4">
+<section id="Cookies" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 pl-4">
     <div class="card w-96 bg-neutral text-neutral-content px-px">
         <div class="card-body items-center text-center">
           <h2 class="card-title">Cookies!</h2>
@@ -295,7 +351,7 @@
       
 </section>
 <!-- ........................................ -->
-      <main class="container mx-auto bg-[#E5E5E5]">
+      <main id="shopping" class="container mx-auto bg-[#E5E5E5]">
         <section class="pt-24 pb-24">
             <div class="grid md:grid-cols-2 gap-7">
                 <div class="rounded-lg flex bg-white p-6">
@@ -336,6 +392,10 @@
         </section>
       </main>
     </main>
+    <footer id="footer" class="flex items-center justify-center p-4 bg-black text-yellow-200 font-bold text-6xl">
+        <h1>Tech Amirul Islam CopyRight 2023</h1>
+        </footer>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
